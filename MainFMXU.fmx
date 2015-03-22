@@ -1,0 +1,34 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 703
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Align = Top
+    Size.Width = 703.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Connect...'
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Size.Width = 703.000000000000000000
+    Size.Height = 431.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object BluetoothLE1: TBluetoothLE
+    Enabled = True
+    OnConnectedDevice = BluetoothLE1ConnectedDevice
+    Left = 504
+    Top = 136
+  end
+end
